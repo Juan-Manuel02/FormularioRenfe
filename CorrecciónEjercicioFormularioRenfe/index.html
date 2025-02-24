@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de billetes RENFE</title>
+    <meta name="description" content="Formulario para reservar billetes de tren">
+    <meta name="keywords" content="renfe, billetes, tren, reserva">
+    <meta name="author" content="Juan Manuel">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reserva de Billetes</h1>
+        <form action="/submit" method="get">
+            <div class="form-group">
+                <label for="origen">🛤 Origen</label>
+                <select id="origen" name="origen" required>
+                    <optgroup label="Andalucía">
+                        <option value="sevilla">Sevilla - Santa Justa</option>
+                        <option value="malaga">Málaga - María Zambrano</option>
+                        <option value="granada">Granada</option>
+                        <option value="cordoba">Córdoba Central</option>
+                    </optgroup>
+                    <optgroup label="Cataluña">
+                        <option value="barcelona">Barcelona - Sants</option>
+                        <option value="tarragona">Tarragona</option>
+                        <option value="girona">Girona</option>
+                        <option value="lleida">Lleida - Pirineus</option>
+                    </optgroup>
+                    <optgroup label="Madrid">
+                        <option value="madrid-atocha">Madrid - Atocha</option>
+                        <option value="madrid-chamartin">Madrid - Chamartín</option>
+                    </optgroup>
+                    <optgroup label="Comunidad Valenciana">
+                        <option value="valencia">Valencia - Joaquín Sorolla</option>
+                        <option value="alicante">Alicante - Terminal</option>
+                        <option value="castellon">Castellón</option>
+                    </optgroup>
+                    <optgroup label="País Vasco">
+                        <option value="bilbao">Bilbao - Abando</option>
+                        <option value="san-sebastian">San Sebastián</option>
+                        <option value="vitoria">Vitoria - Gasteiz</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="destino">🎯 Destino</label>
+                <select id="destino" name="destino" required>
+                    <optgroup label="Andalucía">
+                        <option value="sevilla">Sevilla - Santa Justa</option>
+                        <option value="malaga">Málaga - María Zambrano</option>
+                        <option value="granada">Granada</option>
+                        <option value="cordoba">Córdoba Central</option>
+                    </optgroup>
+                    <optgroup label="Cataluña">
+                        <option value="barcelona">Barcelona - Sants</option>
+                        <option value="tarragona">Tarragona</option>
+                        <option value="girona">Girona</option>
+                        <option value="lleida">Lleida - Pirineus</option>
+                    </optgroup>
+                    <optgroup label="Madrid">
+                        <option value="madrid-atocha">Madrid - Atocha</option>
+                        <option value="madrid-chamartin">Madrid - Chamartín</option>
+                    </optgroup>
+                    <optgroup label="Comunidad Valenciana">
+                        <option value="valencia">Valencia - Joaquín Sorolla</option>
+                        <option value="alicante">Alicante - Terminal</option>
+                        <option value="castellon">Castellón</option>
+                    </optgroup>
+                    <optgroup label="País Vasco">
+                        <option value="bilbao">Bilbao - Abando</option>
+                        <option value="san-sebastian">San Sebastián</option>
+                        <option value="vitoria">Vitoria - Gasteiz</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha">📅 Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="hora">⏰ Hora</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="plazas">🎟 Plazas</label>
+                <input type="number" id="plazas" name="plazas" min="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="clase">🛋 Clase</label>
+                <select id="clase" name="clase" required>
+                    <option value="turista">Turista</option>
+                    <option value="preferente">Preferente</option>
+                    <option value="club">Club</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="adultos">👨‍👩‍👧 Adultos</label>
+                <input type="number" id="adultos" name="adultos" min="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="niños">🧒 Niños</label>
+                <input type="number" id="niños" name="niños" min="0" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="bebes">👶 Bebés</label>
+                <input type="number" id="bebes" name="bebes" min="0" required>
+            </div>
+            
+            <button type="submit" class="btn">Reservar</button>
+        </form>
+   </div>
+</body>
+</html>
